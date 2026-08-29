@@ -1,4 +1,4 @@
-package Ejercicio_3;
+package ejercicio_3;
 
 public class Auto {
     //Atributos de la clase:
