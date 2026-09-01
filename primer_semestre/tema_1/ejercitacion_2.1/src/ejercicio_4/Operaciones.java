@@ -1,6 +1,18 @@
 package ejercicio_4;
 
-public class Calculadora {
+public class Operaciones {
+    //atributos:
+    double n1;
+    double n2;
+
+
+    //constructor:
+    public Operaciones(double n1, double n2){
+        this.n1 = n1;
+        this.n2 = n2;
+    }
+
+
 
     //metodos:
     public double sumar(double n1, double n2) {

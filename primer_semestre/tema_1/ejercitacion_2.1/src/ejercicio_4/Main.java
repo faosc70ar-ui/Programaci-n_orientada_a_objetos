@@ -3,24 +3,17 @@ package ejercicio_4;
 import java.util.Scanner;
 
 public class Main {
-    static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
-        var calculadora = new Calculadora();
-        double n1 = input("ingresar primer número: ");
-        double n2 = input("ingresar segundo número: ");
+        var operaciones = new Operaciones(78, 2.4);
 
-        double r1 = calculadora.sumar(n1, n2);
-        double r2 = calculadora.restar(n1, n2);
-        double r3 = calculadora.multiplicar(n1, n2);
-        double r4 = calculadora.dividir(n1, n2);
+        double r1 = operaciones.sumar(operaciones.n1, operaciones.n2);
+        double r2 = operaciones.restar(operaciones.n1, operaciones.n2);
+        double r3 = operaciones.multiplicar(operaciones.n1, operaciones.n2);
+        double r4 = operaciones.dividir(operaciones.n1, operaciones.n2);
 
-        resultados(r1, r2, r3, r4, n1, n2);
+        resultados(r1, r2, r3, r4, operaciones.n1, operaciones.n2);
     }
 
-    public static double input(String mensaje){
-        System.out.print(mensaje);
-        return scanner.nextDouble();
-    }
 
     public static void resultados(double r1, double r2, double r3, double r4, double n1, double n2){
         System.out.println(String.format(" %.2f + %.2f = %.2f", n1, n2, r1));
