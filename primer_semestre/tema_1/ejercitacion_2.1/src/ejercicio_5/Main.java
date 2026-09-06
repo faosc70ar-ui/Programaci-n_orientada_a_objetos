@@ -2,15 +2,15 @@ package ejercicio_5;
 
 public class Main {
     public static void main(String[] args) {
-        var contador =  new Iterador();
+        var contador1 =  new Iterador();
 
-        System.out.println(contador.getValor());
+        System.out.println(contador1.getValor());
 
-        contador.decrementar();
-        System.out.println(contador.getValor());
+        contador1.decrementar();
+        System.out.println(contador1.getValor());
 
-        contador.incrementar();
-        System.out.println(contador.getValor());
+        contador1.incrementar();
+        System.out.println(contador1.getValor());
 
 
         var contador2 = new Iterador(34);
